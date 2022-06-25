@@ -1,0 +1,32 @@
+<html>
+
+<head>
+    <title> See Grades </title>
+</head>
+
+<body align="center">
+    <table cellspacing="2" align="center" cellpadding="8" border="0">
+        <tr>
+            <td> password</td>
+            <td><input type="password" placeholder="enter your password" id="n1"></td>
+        </tr>
+        <tr>
+            <td>
+                <input type="submit" value="voir" onClick="create_account()" />
+    </table>
+    <script type="text/javascript" src="grades.json"></script>
+    <script type="text/javascript">
+        function create_account() {
+            const n = document.getElementById("n1").value;
+            if (n == '') {
+                alert("enter password!!");
+            }
+            else {
+                var mydata = JSON.parse(data);
+                n in mydata ? alert("your score is :"+mydata[n]) :  alert("password is incorrect!!")
+            }
+        }
+    </script>
+</body>
+
+</html>
