@@ -16,6 +16,7 @@
     </table>
     <script type="text/javascript" src="grades.json"></script>
     <script type="text/javascript">
+        document.addEventListener("contextmenu", (e) => { e.preventDefault();}, false);
         function create_account() {
             const n = document.getElementById("n1").value;
             if (n == '') {
